@@ -1,10 +1,53 @@
-<h1 style="color:red; font-family:Al Nile">  Hola Mundo :D</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bienvenido</title>
 
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
-<!---
-HTML -> Hyper text Markup Lenguage
+  <!-- Configuración básica de colores -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1f2933',
+            accent: '#3b82f6',
+            soft: '#f9fafb'
+          }
+        }
+      }
+    }
+  </script>
+</head>
 
+<body class="bg-soft min-h-screen flex items-center justify-center font-sans">
 
+  <div class="bg-white shadow-lg rounded-2xl p-10 max-w-md text-center">
 
+    <h1 class="text-3xl font-semibold text-primary mb-4">
+      Bienvenido 👋
+    </h1>
 
--->
+    <p class="text-gray-600 mb-6">
+      Este servidor está activo y listo para responder.
+      Has llegado a la puerta principal de la aplicación.
+    </p>
+
+    <div class="w-full h-px bg-gray-200 mb-6"></div>
+
+    <p class="text-sm text-gray-500 mb-4">
+      Proyecto construido con Flask, Flask-RESTful y buenas prácticas.
+    </p>
+
+    <span class="inline-block bg-accent text-white text-sm px-4 py-2 rounded-full">
+      API en ejecución
+    </span>
+
+  </div>
+
+</body>
+</html>
